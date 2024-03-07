@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20240306095935",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "booking",
+  "fields": [
+    {
+      "fieldName": "checkInDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "checkOutDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "totalPrice",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Booking",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "room",
+      "relationshipName": "room",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

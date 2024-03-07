@@ -1,0 +1,40 @@
+{
+  "applications": "*",
+  "changelogDate": "20240306095934",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "room",
+  "fields": [
+    {
+      "fieldName": "roomNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "roomType",
+      "fieldType": "RoomType",
+      "fieldValues": "SINGLE,DOUBLE,SUITE"
+    },
+    {
+      "fieldName": "pricePerNight",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "availability",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Room",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "hotel",
+      "relationshipName": "hotel",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

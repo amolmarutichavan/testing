@@ -1,0 +1,39 @@
+entity Hotel {
+    name String required,
+    address String,
+    city String,
+    country String,
+    rating Integer,
+    facilities String
+}
+
+enum RoomType {
+    SINGLE,
+    DOUBLE,
+    SUITE
+}
+
+entity Room {
+    roomNumber String required,
+    roomType RoomType,
+    pricePerNight BigDecimal,
+    availability Boolean,
+}
+
+
+entity Booking {
+    checkInDate ZonedDateTime,
+    checkOutDate ZonedDateTime,
+    totalPrice BigDecimal,
+    status String,
+}
+
+relationship ManyToOne {
+    Room{hotel} to Hotel,
+    Booking{user} to User,
+    Booking{room} to Room
+}
+
+dto * with mapstruct
+
+service * with serviceImpl
