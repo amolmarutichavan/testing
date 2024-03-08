@@ -1,0 +1,11 @@
+id;room_number;room_type;price_per_night;availability
+1;Car;SUITE;98208;true
+2;Dynamic Manager;SUITE;4051;true
+3;Technician CFP supply-chains;SUITE;75973;true
+4;Guinea Steel;DOUBLE;61657;false
+5;copy;SUITE;30741;true
+6;Taiwan;SINGLE;89369;true
+7;array;SUITE;97068;false
+8;Turnpike Account turquoise;SINGLE;40657;true
+9;Buckinghamshire Small;DOUBLE;3556;true
+10;Handcrafted;SUITE;33012;false
